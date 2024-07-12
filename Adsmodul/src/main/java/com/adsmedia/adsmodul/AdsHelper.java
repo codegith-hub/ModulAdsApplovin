@@ -54,13 +54,14 @@ public class AdsHelper {
         AppLovinPrivacySettings.setIsAgeRestrictedUser(childDirected, activity);
     }
 
-    public static void initializeAds(Activity activity) {
+    public static void initializeAds(Activity activity, int keypos) {
         AppLovinSdk.getInstance(activity).setMediationProvider("max");
         AppLovinSdk.initializeSdk(activity, new AppLovinSdk.SdkInitializationListener() {
             @Override
             public void onSdkInitialized(final AppLovinSdkConfiguration configuration) {
             }
         });
+        MasterAdsHelper.initializeAds(activity,keypos);
     }
 
     public static void debugMode(Boolean debug) {
