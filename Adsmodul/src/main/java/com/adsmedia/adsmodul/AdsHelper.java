@@ -36,7 +36,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class AdsHelper {
     public static boolean openads = true;
-    public static void gdpr(Activity activity, Boolean childDirected) {
+    public static void gdpr(Activity activity, Boolean childDirected, int keypos) {
         AppLovinSdk.initializeSdk(activity, new AppLovinSdk.SdkInitializationListener() {
             @Override
             public void onSdkInitialized(final AppLovinSdkConfiguration configuration) {
