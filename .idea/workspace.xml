@@ -16,8 +16,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f05d7850-5b1c-4345-ae76-fe7cf0ca0a39" name="Changes" comment="key pos">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+    <list default="true" id="f05d7850-5b1c-4345-ae76-fe7cf0ca0a39" name="Changes" comment="key pos 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720794191598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="key pos 1">
+      <option name="closed" value="true" />
+      <created>1720794825302</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720794825302</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -298,6 +305,7 @@
     <MESSAGE value="remove Fan inter" />
     <MESSAGE value="fix Error" />
     <MESSAGE value="key pos" />
-    <option name="LAST_COMMIT_MESSAGE" value="key pos" />
+    <MESSAGE value="key pos 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="key pos 1" />
   </component>
 </project>
