@@ -36,7 +36,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class AdsHelper {
     public static boolean openads = true;
-    public static void gdpr(Activity activity, Boolean childDirected, String keypos) {
+    public static boolean directData = false;
+    public static void gdpr(Activity activity, Boolean childDirected, String keypos, String gameAppId) {
         AppLovinSdk.initializeSdk(activity, new AppLovinSdk.SdkInitializationListener() {
             @Override
             public void onSdkInitialized(final AppLovinSdkConfiguration configuration) {
@@ -54,7 +55,7 @@ public class AdsHelper {
         AppLovinPrivacySettings.setIsAgeRestrictedUser(childDirected, activity);
     }
 
-    public static void initializeAds(Activity activity, String keypos) {
+    public static void initializeAds(Activity activity, String keypos, String gameAppId) {
         AppLovinSdk.getInstance(activity).setMediationProvider("max");
         AppLovinSdk.initializeSdk(activity, new AppLovinSdk.SdkInitializationListener() {
             @Override
@@ -82,6 +83,7 @@ public class AdsHelper {
 
     public static void showBanner(Activity activity, RelativeLayout layout, String admobId) {
         adViewMax = new MaxAdView(admobId, activity);
+        directData = true;
         MaxAdViewAdListener listener = new MaxAdViewAdListener() {
             @Override
             public void onAdExpanded(MaxAd ad) {
@@ -137,6 +139,7 @@ public class AdsHelper {
 
     public static void loadInterstitial(Activity activity, String admobId) {
         interstitialAd = new MaxInterstitialAd(admobId, activity);
+        directData = true;
         interstitialAd.loadAd();
     }
 

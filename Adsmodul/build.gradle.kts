@@ -42,6 +42,7 @@ dependencies {
     implementation (libs.google.adapter)
     implementation (libs.unityads.adapter)
     implementation (libs.masterads)
+    implementation (libs.gson)
 }
 android {
     publishing {
