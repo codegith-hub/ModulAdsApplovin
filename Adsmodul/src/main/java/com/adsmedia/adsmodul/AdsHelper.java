@@ -141,6 +141,7 @@ public class AdsHelper {
         interstitialAd = new MaxInterstitialAd(admobId, activity);
         directData = true;
         interstitialAd.loadAd();
+        MasterAdsHelper.loadInterstitial(activity);
     }
 
     public static int count = 0;
